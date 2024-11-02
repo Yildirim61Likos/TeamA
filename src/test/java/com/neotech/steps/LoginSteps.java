@@ -14,8 +14,10 @@ public class LoginSteps extends CommonMethods{
 
 
 	@When("I enter a valid username")
-	public void i_enter_a_valid_username() {
-	    sendText(login.username,ConfigsReader.getProperty("username"));
+	public void i_enter_a_valid_username()
+	{
+		System.out.println("This is the URL COMING FROM jENKINS !!!  "+System.getProperty("WebUrl"));
+		sendText(login.username,ConfigsReader.getProperty("username"));
 	}
 
 	@When("I enter a valid password")

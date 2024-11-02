@@ -36,8 +36,10 @@ public class BaseClass {
 				
 		}
 		
-		String website=ConfigsReader.getProperty("url");
-		driver.get(website);
+		//String website=ConfigsReader.getProperty("url");
+		System.out.println("This is the URL COMING FROM jENKINS !!!  "+System.getProperty("WebUrl"));
+		driver.get(System.getProperty("WebUrl"));
+		System.out.println();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Constants.IMPLICIT_WAIT_TIME));
 		

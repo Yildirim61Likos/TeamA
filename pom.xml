@@ -77,6 +77,14 @@
 					</includes>
 
 					<testFailureIgnore>true</testFailureIgnore>
+					
+					<systemPropertyVariables>
+						
+						<WebUrl>${WebUrl}</WebUrl>
+						
+					</systemPropertyVariables>
+						
+					
 				</configuration>
 			</plugin>
 
